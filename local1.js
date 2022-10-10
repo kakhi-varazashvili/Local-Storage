@@ -33,7 +33,7 @@ chkpsw.addEventListener("click", function(){
             console.log("OK")
         }
         else{
-            chkpsw.style.backgroundColor = "green"
+            chkpsw.style.backgroundColor = "red"
             chkpsw.style.color = "white"
             chkpsw.innerHTML = "Passwords do not match"
             console.log("error")
