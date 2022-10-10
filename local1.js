@@ -1,6 +1,6 @@
 var clear = document.querySelector(".clear")
 clear.addEventListener("click", function(){
-    localStorage.clear()
+localStorage.clear()
 
 })
 var psw1 = document.querySelector(".psw1")
@@ -23,14 +23,14 @@ function myFunction(){
 
 chkpsw.addEventListener("click", function(){
 
-    
+    // if(psw1.value === "" & psw2.value==="" ){
+    //     document.querySelector(".chkpsw").disabled = true 
+    // }
         if(psw1.value == psw2.value){
             chkpsw.style.backgroundColor = "green"
             chkpsw.style.color = "white"
             chkpsw.innerHTML = "Confirmed"
-
-            console.log("kakhi")
-            
+            console.log("OK")
         }
         else{
             chkpsw.style.backgroundColor = "green"
@@ -39,7 +39,6 @@ chkpsw.addEventListener("click", function(){
             console.log("error")
         }
     }
-
 )
 
 
